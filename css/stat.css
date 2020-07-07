@@ -8,12 +8,18 @@
 body.stat {
     display: flex;
     font-family: Verdana, 'Georgia', sans-serif;
-    margin: 0px 40px;
+    font-size: 13px;
+    margin: 0px auto;
+    padding: 0px 20px;
     flex-direction: column;
+    max-width: 840px;
 }
 
-img.logo {
-    width: 400px;
+.logo {
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    width: 600px;
+    height: 62.72px; /* hauteur = largeur / 9,56 */
     margin: auto;
     margin-top: 30px;
 }
@@ -42,14 +48,24 @@ h2.newletter {
 }
 
 .sectionsTitles {
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 8px;
     font-family: Georgia, serif
 }
 
 .dotted {
-    width: 800px;
-    margin: 20px auto;
+    height: 11px;
+    line-height: 0px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 20px;
+    font-family: "Geneva";
+    color: silver;
+    white-space: nowrap; /* indispensable pour utiliser la propriété text-overflow */
+    overflow: hidden; /* indispensable pour utiliser la propriété text-overflow */
+    text-overflow: "";
 }
 
 .iconsText {
@@ -86,8 +102,9 @@ h2.newletter {
 }
 
 .triangleBtn {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: auto;
+    margin-right: 5px;
 }
 
 .triangleBtn.rotate90 {
@@ -207,7 +224,7 @@ p.dateSent {
 
 .right table {
     text-align: left;
-    min-width: 460px;
+    width: 460px;
 
     /*flex: auto 1 0; /* flex-grow, flex-shrink et flex-basis  */
 }
@@ -217,8 +234,22 @@ table {
     border-collapse: collapse;
 }
 
-table.clickRate {
+table.clickRate.align {
     margin-top: 25px;
+}
+
+table.recipients.align .center, table.openingRate.align .center, table.clickRate.align .center {
+    width: 75px;
+}
+
+table.recipients.align, table.openingRate.align, table.clickRate.align {
+    table-layout: fixed;
+}
+
+td.url, td.email {
+    white-space: nowrap; /* indispensable pour utiliser la propriété text-overflow */
+    overflow: hidden; /* indispensable pour utiliser la propriété text-overflow */
+    text-overflow: ellipsis;
 }
 
 table th {
@@ -330,6 +361,7 @@ table.co2 tbody tr:nth-child(odd) {
 
 .details.clickRate {
     background-color: #b6c7d3;
+    margin-top: 30px;
 }
 
 .details.bouncesRate {
@@ -402,19 +434,18 @@ div.bouncesRate.spacing p {
     margin: auto;
     margin-top: 65px;
     margin-bottom: 90px;
-    padding: 10px 50px;
+    padding: 5px 30px;
     border-radius: 50px;
     text-decoration: none;
 }
 
 @media (max-width: 800px) {
 
-    body.stat {
-        margin: 0px 20px;
-    }
+    .logo {
+        background-image: url("../img/logo_baseline.png");
+        width: 260px;
+        height: 67.53px; /* hauteur = largeur / 3,85 */
 
-    img.logo {
-        width: 300px;
     }
 
     .blocks {
@@ -426,6 +457,11 @@ div.bouncesRate.spacing p {
     .right {
         width: 100%;
     }
+
+    .right table {
+        width: 100%;
+    }
+
 }
 
 /*
@@ -437,7 +473,7 @@ div.bouncesRate.spacing p {
 }
 */
 
-@media (max-width: 300px) {
+@media (max-width: 390px) {
 
     .leftColumnIcons {
         margin-right: 0px;

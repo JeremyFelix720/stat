@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stat.css">
-    <title>Stats</title>
+    <link rel="stylesheet" href="./css/stat.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/stat.js" defer></script>
+    <title>Statistiques de votre campagne d'emailing via idFuse</title>
   </head>
   <body>
     <body class="stat">
-      <img class="logo" src="img/logo.png" alt="logo" title="Logo de idFuse">
       
+      <a class="logo" href="https://www.idfuse.fr/" target="_blank"></a>
       
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <section>
         <h2 class="beforeTitle">STATISTIQUES DÉTAILLÉES</h2>
@@ -19,7 +21,7 @@
         <h2 class="newletter">Titre newsletter</h2>
       </section>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <section class="columnIcons">
 
@@ -73,7 +75,7 @@
 
       </section>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles recipients">Destinataires</h3>
 
@@ -120,36 +122,30 @@
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <div class="details recipients">
-        <p>Détails</p>
-        <img class="triangleBtn rotate90" src="icons/picto_triangle.png" alt="triangle">
-      </div>
-
-
-      <table class="recipients">
+      <table class="recipients align">
         <tbody>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
-            <td>2020-06-16 14:35:23</td>
-          </tr>
-          <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
         </tbody>
@@ -189,7 +185,7 @@
 
       </section>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles openingRate">Taux d’ouverture</h3>
 
@@ -239,35 +235,30 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <div class="details openingRate">
-        <p>Détails</p>
-        <img class="triangleBtn rotate90" src="icons/picto_triangle.png" alt="triangle">
-      </div>
-
-      <table class="openingRate">
+      <table class="openingRate align">
         <tbody>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
           <tr>
-            <td>a.carayol@sparchitecte.com</td>
+            <td class="email">a.carayol@sparchitecte.com</td>
             <td>2020-06-16 14:35:23</td>
           </tr>
         </tbody>
@@ -279,7 +270,7 @@ réactivité de la base et la qualité de la segmentation.</p>
         </thead>
       </table>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles openingTime">Délai d’ouverture</h3>
 
@@ -298,7 +289,42 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <table class="openingTime">
+        <tbody>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="openingTime">Adresse email</th>
+            <th class="openingTime">Date</th>
+          </tr>
+        </thead>
+      </table>
+
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles reactivityRate">Taux de réactivité</h3>
 
@@ -316,7 +342,42 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <table class="reactivityRate">
+        <tbody>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="reactivityRate">Adresse email</th>
+            <th class="reactivityRate">Date</th>
+          </tr>
+        </thead>
+      </table>
+
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
 
       <h3 class="sectionsTitles clickRate">Taux de clics</h3>
@@ -357,30 +418,30 @@ réactivité de la base et la qualité de la segmentation.</p>
       <p class="definition clickRate"><span class="clickRate bold">Définition : </span>Rapport entre le nombre d’e-mails ouverts (ouverture unique) et le nombre d’e-mails délivrés. Indique la
 réactivité de la base et la qualité de la segmentation.</p>
 
-      <table class="clickRate">
+      <table class="clickRate align">
         <tbody>
           <tr>
-            <td>login.microsoftonline.com/24139d14-c62c-4c4...</td>
+            <td class="url">login.microsoftonline.com/24139d14-c62c-4c4...</td>
             <td class="center">4</td>
             <td class="center">10%</td>
           </tr>
           <tr>
-            <td>engie.it/documents/1416173/3540102/ENGIE...</td>
+            <td class="url">engie.it/documents/1416173/3540102/ENGIE...</td>
             <td class="center">7</td>
             <td class="center">18%</td>
           </tr>
           <tr>
-            <td>login.microsoftonline.com/24139d14-c62c-4c4...</td>
+            <td class="url">login.microsoftonline.com/24139d14-c62c-4c4...</td>
             <td class="center">4</td>
             <td class="center">10%</td>
           </tr>
           <tr>
-            <td>engie.it/documents/1416173/3540102/ENGIE...</td>
+            <td class="url">engie.it/documents/1416173/3540102/ENGIE...</td>
             <td class="center">7</td>
             <td class="center">18%</td>
           </tr>
           <tr>
-            <td>login.microsoftonline.com/24139d14-c62c-4c4...</td>
+            <td class="url">login.microsoftonline.com/24139d14-c62c-4c4...</td>
             <td class="center">4</td>
             <td class="center">10%</td>
           </tr>
@@ -399,7 +460,42 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <table class="clickRate">
+        <tbody>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="clickRate">Adresse email</th>
+            <th class="clickRate">Date</th>
+          </tr>
+        </thead>
+      </table>
+
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles bouncesRate">Taux de bounces</h3>
 
@@ -454,7 +550,42 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <table class="bouncesRate">
+        <tbody>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="bouncesRate">Adresse email</th>
+            <th class="bouncesRate">Date</th>
+          </tr>
+        </thead>
+      </table>
+
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles complaintRate">Taux de plaintes</h3>
 
@@ -493,10 +624,45 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <table class="complaintRate">
+        <tbody>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="complaintRate">Adresse email</th>
+            <th class="complaintRate">Date</th>
+          </tr>
+        </thead>
+      </table>
+
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
 
-      <h3 class="sectionsTitles unsubscribeRate">Taux de désabonnement</h3>
+      <h3 class="sectionsTitles unsubscribeRate">Taux de désabonnements</h3>
 
       <section class="blocksTables">
         <section class="blocks unsubscribeRate color">
@@ -510,7 +676,7 @@ réactivité de la base et la qualité de la segmentation.</p>
           <table class="unsubscribeRate">
             <tbody>
               <tr>
-                <td>Désabonnement</td>
+                <td>Désabonnements</td>
                 <td class="center">3</td>
                 <td class="center">0,36%</td>
               </tr>
@@ -533,7 +699,42 @@ réactivité de la base et la qualité de la segmentation.</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
 
-      <img class="dotted" src="img/dotted.png" alt="pointillés">
+      <table class="unsubscribeRate">
+        <tbody>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td >2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+          <tr>
+            <td class="email">a.carayol@sparchitecte.com</td>
+            <td>2020-06-16 14:35:23</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th class="unsubscribeRate">Adresse email</th>
+            <th class="unsubscribeRate">Date</th>
+          </tr>
+        </thead>
+      </table>
+
+      <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
       <h3 class="sectionsTitles co2">CO2</h3>
 
