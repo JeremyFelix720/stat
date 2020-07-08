@@ -1,46 +1,54 @@
-
-
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
 body.stat {
-    display: flex;
     font-family: Verdana, 'Georgia', sans-serif;
     font-size: 13px;
     margin: 0px auto;
     padding: 0px 20px;
-    flex-direction: column;
     max-width: 840px;
+}
+
+p, h1, h2, h3, h4 {
+    margin: 0px;
 }
 
 .logo {
     background-image: url("../img/logo.png");
-    background-size: cover;
-    width: 600px;
-    height: 62.72px; /* hauteur = largeur / 9,56 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 530px;
+    height: 55px;
     margin: auto;
     margin-top: 30px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
+.logo:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
 h1.firstTitle {
-        font-size: 25px;
-        margin: 0px;
-        font-weight: normal;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: normal;
 }
 
 h2.beforeTitle {
-    content: "STATISTIQUES DÉTAILLÉES";
-    font-size: 15px;
     margin: 0px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 h2.newletter {
-    font-size: 35px;
-    color: #57becb;
     margin: 0px;
-    font-family: Georgia, serif
+    color: #57becb;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .bold {
@@ -48,10 +56,11 @@ h2.newletter {
 }
 
 .sectionsTitles {
-    font-size: 25px;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 8px;
-    font-family: Georgia, serif
+    font-size: 25px;
+    font-family: Georgia, serif;
+    font-weight: bold;
 }
 
 .dotted {
@@ -68,18 +77,12 @@ h2.newletter {
     text-overflow: "";
 }
 
-.iconsText {
-    display: flex;
-    align-items: center;
-}
-
-.columnIcons {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .leftColumnIcons {
-    margin-right: 70px;
+    margin-right: 50px;
+}
+
+.leftColumnIcons .divIcons {
+    margin-right: 15px;
 }
 
 .rightColumnIcons .iconsText .divIcons {
@@ -87,18 +90,24 @@ h2.newletter {
     left: 6px;
 }
 
+.rightColumnIcons .divIcons {
+    margin-right: 8px;
+}
+
+.leftColumnIcons article, .rightColumnIcons article {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .descriptions {
     font-weight: normal;
+    font-size: 13px;
     color: #57becb
 }
 
 .divIcons {
-    display: flex;
-    align-items: center;
     width: 45px;
     height: 45px;
-    margin-right: 15px;
-    justify-content: flex-end;
 }
 
 .triangleBtn {
@@ -113,6 +122,8 @@ h2.newletter {
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .littleIcons {
@@ -135,13 +146,6 @@ p.dateSent {
     font-weight: bold;
 }
 
-.blocksTables, .devicesBlocks {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
 .devicesBlocks section {
     margin: 6px 0px;
 }
@@ -151,27 +155,16 @@ p.dateSent {
 }
 
 .blocks {
-    display: flex;
-    vertical-align: bottom;
-    justify-content: flex-end;
-    align-items: flex-end;
     margin: 0px;
     margin-right: 15px;
     border-radius: 10px;
     height: 100px;
-    width: 235px;
+    min-width: 245px;
     color: white;
 }
 
 .blocks article {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 10px 20px;
-}
-
-.blocks article img {
-    align-self: flex-end;
+    margin: 3px 18px;
 }
 
 .blocks.recipients.color {
@@ -212,7 +205,7 @@ p.dateSent {
 
 
 .bigNumbers {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     text-align: right;
 }
@@ -224,8 +217,7 @@ p.dateSent {
 
 .right table {
     text-align: left;
-    width: 460px;
-
+    width: 485px;
     /*flex: auto 1 0; /* flex-grow, flex-shrink et flex-basis  */
 }
 
@@ -334,9 +326,6 @@ table.co2 tbody tr:nth-child(odd) {
 }
 
 .details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 25px;
     color: white;
     padding: 0px 5px;
@@ -382,8 +371,6 @@ table.co2 tbody tr:nth-child(odd) {
 
 .smartphone, .tablet, .desktop {
     margin: 10px 0px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .smartphone {
@@ -399,10 +386,15 @@ table.co2 tbody tr:nth-child(odd) {
 }
 
 .devicesBlocks img {
-    margin-left: 40px;
+    margin-left: 30px;
+}
+
+.devicesBlocks p {
+    height: 36px;
 }
 
 .devicesBlocks .blocks h4 {
+    font-size: 13px;
     font-weight: normal;
     font-family: Georgia, serif;
     text-align: right;
@@ -410,8 +402,9 @@ table.co2 tbody tr:nth-child(odd) {
 
 .exponent {
     font-variant-position: super;
+    font-size: 22px;
     position: relative;
-    top: 4px;
+    bottom: 2px;
 }
 
 .center {
@@ -423,35 +416,36 @@ table.co2 tbody tr:nth-child(odd) {
 }
 
 div.bouncesRate.spacing p {
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .btnPdf {
-    background-color: #57becb;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
     margin-top: 65px;
     margin-bottom: 90px;
+}
+
+.btnPdf a {
+    width: 280px;
     padding: 5px 30px;
     border-radius: 50px;
+    background-color: #57becb;
+    color: white;
+    text-align: center;
     text-decoration: none;
 }
+
+.btnPdf a:hover {
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
 
 @media (max-width: 800px) {
 
     .logo {
         background-image: url("../img/logo_baseline.png");
-        width: 260px;
-        height: 67.53px; /* hauteur = largeur / 3,85 */
-
-    }
-
-    .blocks {
-        align-self: center;
-        width: 100%;
-        margin: 0px;
+        width: 230px;
+        height: 63px;
     }
 
     .right {
@@ -460,6 +454,20 @@ div.bouncesRate.spacing p {
 
     .right table {
         width: 100%;
+    }
+
+    .devicesBlocks {
+        flex-wrap: wrap;
+    }
+
+    .devicesBlocks .blocks {
+        margin: 6px auto;
+        width: 100%;
+    }
+
+    .blocks.color {
+        width: 100%;
+        margin: 0px;
     }
 
 }

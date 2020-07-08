@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/stat.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./js/stat.js" defer></script>
@@ -10,8 +11,10 @@
   </head>
   <body>
     <body class="stat">
-      
-      <a class="logo" href="https://www.idfuse.fr/" target="_blank"></a>
+
+      <div class="d-flex justify-content-center">
+        <a class="logo" href="https://www.idfuse.fr/" target="_blank"></a>
+      </div>
       
       <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
@@ -23,11 +26,11 @@
 
       <p class="dotted">....................................................................................................................................................................................................................................................................</p>
 
-      <section class="columnIcons">
+      <section class="d-flex flex-row flex-wrap">
 
-        <section class="leftColumnIcons">
-          <article class="iconsText">
-            <div class="divIcons">
+        <section class="leftColumnIcons d-flex flex-column">
+          <article class="d-flex align-items-center">
+            <div class="divIcons d-flex align-items-center justify-content-end">
               <img class="bigIcons" src="./icons/picto_envoyee.png" alt="icone envoyée">
             </div>
             <div>
@@ -36,8 +39,8 @@
             </div>
           </article>
 
-          <article class="iconsText">
-            <div class="divIcons">
+          <article class="d-flex align-items-center">
+            <div class="divIcons d-flex align-items-center justify-content-end">
               <img class="bigIcons" src="./icons/picto_rno.png" alt="icone RNO">
             </div>
             <div>
@@ -47,10 +50,10 @@
           </article>
         </section>
 
-        <section class="rightColumnIcons">
-          <article class="iconsText">
+        <section class="rightColumnIcons d-flex flex-column">
+          <article class="d-flex align-items-center">
             <div>
-              <div class='divIcons'>
+              <div class="divIcons d-flex align-items-center justify-content-end">
                 <img class="mediumIcons" src="./icons/picto_listes.png" alt="icone listes">
               </div>
             </div>
@@ -60,9 +63,9 @@
             </div>
           </article>
 
-          <article class="iconsText">
+          <article class="d-flex align-items-center">
             <div>
-              <div class='divIcons'>
+              <div class="divIcons d-flex align-items-center justify-content-end">
                 <img class="mediumIcons" src="./icons/picto_segment.png" alt="icone segment">
               </div>
             </div>
@@ -79,9 +82,10 @@
 
       <h3 class="sectionsTitles recipients">Destinataires</h3>
 
-      <section class="blocksTables">
-        <section class="blocks recipients color">
-          <article>
+      <section class="d-flex justify-content-between flex-wrap">
+
+        <section class="blocks recipients color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
             <img class="littleIcons" src="./icons/picto_destinataire.png" alt="icone listes">
             <p class='bigNumbers'>837</p>
           </article>
@@ -115,9 +119,10 @@
             </thead>
           </table>
         </article>
+
       </section>
 
-      <div class="details recipients">
+      <div class="details recipients d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -157,29 +162,29 @@
         </thead>
       </table>
 
-      <section class="devicesBlocks">
+      <section class="devicesBlocks d-flex justify-content-between">
 
-        <section class="blocks smartphone">
+        <section class="blocks smartphone d-flex justify-content-between align-items-center">
           <img class="bigIcons" src="./icons/picto_smartphone.png" alt="icone portable">
-          <article>
+          <article class="d-flex flex-column justify-content-end">
             <h4>Smartphone</h4>
-            <p class='bigNumbers'>55<span class="exponent">%</span></p>
+            <p class="bigNumbers">55<span class="exponent">%</span></p>
           </article>
         </section>
 
-        <section class="blocks tablet">
+        <section class="blocks tablet d-flex justify-content-between align-items-center">
           <img class="bigIcons" src="./icons/picto_tablette.png" alt="icone tablette">
-          <article>
+          <article class="d-flex flex-column justify-content-end">
             <h4>Tablette</h4>
-            <p class='bigNumbers'>8<span class="exponent">%</span></p>
+            <p class="bigNumbers">8<span class="exponent">%</span></p>
           </article>
         </section>
 
-        <section class="blocks desktop">
+        <section class="blocks desktop d-flex justify-content-between align-items-center">
           <img class="bigIcons" src="./icons/picto_desktop.png" alt="icone ordinateur">
-          <article>
+          <article class="d-flex flex-column justify-content-end">
             <h4>Desktop</h4>
-            <p class='bigNumbers'>37<span class="exponent">%</span></p>
+            <p class="bigNumbers">37<span class="exponent">%</span></p>
           </article>
         </section>
 
@@ -189,9 +194,10 @@
 
       <h3 class="sectionsTitles openingRate">Taux d’ouverture</h3>
 
-      <section class="blocksTables">
-        <section class="blocks openingRate color">
-          <article>
+      <section class="d-flex justify-content-between flex-wrap">
+
+        <section class="blocks openingRate color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
             <img class="littleIcons" src="./icons/picto_ouverture.png" alt="icone listes">
             <p class='bigNumbers'>17,56<span class="exponent">%</span></p>
           </article>
@@ -218,19 +224,20 @@
             </tbody>
             <thead>
               <tr>
-                <th class="bold openingRate">Ouverture</th>
+                <th class="bold openingRate">Ouvertures</th>
                 <th class="openingRate center">Valeurs</th>
                 <th class="openingRate center">%</th>
               </tr>
             </thead>
           </table>
         </article>
+
       </section>
 
       <p class="definition"><span class="openingRate bold">Définition : </span>Rapport entre le nombre d’e-mails ouverts (ouverture unique) et le nombre d’e-mails délivrés. Indique la
 réactivité de la base et la qualité de la segmentation.</p>
 
-      <div class="details openingRate">
+      <div class="details openingRate d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -274,17 +281,20 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles openingTime">Délai d’ouverture</h3>
 
-      <section class="blocks openingTime color">
-        <article>
-          <img class="littleIcons" src="./icons/picto_reactivite.png" alt="icone listes">
-          <p class='bigNumbers'>00:36:31</p>
-        </article>
+      <section class="d-flex justify-content-start">
+        <section class="blocks openingTime color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
+            <img class="littleIcons" src="./icons/picto_reactivite.png" alt="icone listes">
+            <p class='bigNumbers'>00:36:31</p>
+          </article>
+        </section>
       </section>
+
 
       <p class="definition"><span class="openingTime bold">Définition : </span>Calcule le moment où le serveur distant délivre le mail dans la boite de réception du destinataire et indique au
         bout de combien de temps le destinateur l’a ouvert.</p>
 
-      <div class="details openingTime">
+      <div class="details openingTime d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -328,16 +338,19 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles reactivityRate">Taux de réactivité</h3>
 
-      <section class="blocks reactivityRate color">
-        <article>
-          <img class="littleIcons" src="./icons/picto_reactivite.png" alt="icone listes">
-          <p class='bigNumbers'>6,21<span class="exponent">%</span></p>
-        </article>
+      <section class="d-flex justify-content-start">
+        <section class="blocks reactivityRate color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
+            <img class="littleIcons" src="./icons/picto_reactivite.png" alt="icone listes">
+            <p class='bigNumbers'>6,21<span class="exponent">%</span></p>
+          </article>
+        </section>
       </section>
+
 
       <p class="definition"><span class="reactivityRate bold">Définition : </span>Rapport entre le nombre de clics uniques et le nombre d’e-mails ouverts uniques.</p>
 
-      <div class="details reactivityRate">
+      <div class="details reactivityRate d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -382,9 +395,10 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles clickRate">Taux de clics</h3>
 
-      <section class="blocksTables">
-        <section class="blocks clickRate color">
-          <article>
+      <section class="d-flex justify-content-between flex-wrap">
+
+        <section class="blocks clickRate color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
             <img class="littleIcons" src="./icons/picto_clic.png" alt="icone listes">
             <p class='bigNumbers'>17,56<span class="exponent">%</span></p>
           </article>
@@ -413,6 +427,7 @@ réactivité de la base et la qualité de la segmentation.</p>
             </thead>
           </table>
         </article>
+
       </section>
 
       <p class="definition clickRate"><span class="clickRate bold">Définition : </span>Rapport entre le nombre d’e-mails ouverts (ouverture unique) et le nombre d’e-mails délivrés. Indique la
@@ -455,7 +470,7 @@ réactivité de la base et la qualité de la segmentation.</p>
         </thead>
       </table>
 
-      <div class="details clickRate">
+      <div class="details clickRate d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -499,9 +514,10 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles bouncesRate">Taux de bounces</h3>
 
-      <section class="blocksTables">
-        <section class="blocks bouncesRate color">
-          <article>
+      <section class="d-flex justify-content-between flex-wrap">
+
+        <section class="blocks bouncesRate color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
             <img class="littleIcons" src="./icons/picto_bounces.png" alt="icone listes">
             <p class='bigNumbers'>0<span class="exponent">%</span></p>
           </article>
@@ -528,13 +544,14 @@ réactivité de la base et la qualité de la segmentation.</p>
             </tbody>
             <thead>
               <tr>
-                <th class="bold bouncesRate">Ouverture</th>
+                <th class="bold bouncesRate">Bounces</th>
                 <th class="bouncesRate center">Valeurs</th>
                 <th class="bouncesRate center">%</th>
               </tr>
             </thead>
           </table>
         </article>
+
       </section>
 
         <p class="definition"><span class="bouncesRate bold">Définitions :</span></p>
@@ -545,7 +562,7 @@ réactivité de la base et la qualité de la segmentation.</p>
           aux lettres inactive). Il est supprimé automatiquement, de manière définitive, dans la plateforme.</p>
       </div>
 
-      <div class="details bouncesRate">
+      <div class="details bouncesRate d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -589,9 +606,10 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles complaintRate">Taux de plaintes</h3>
 
-      <section class="blocksTables">
-        <section class="blocks complaintRate color">
-          <article>
+      <section class="d-flex justify-content-between flex-wrap">
+
+        <section class="blocks complaintRate color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
             <img class="littleIcons" src="./icons/picto_plaintes.png" alt="icone listes">
             <p class='bigNumbers'>0<span class="exponent">%</span></p>
           </article>
@@ -615,11 +633,12 @@ réactivité de la base et la qualité de la segmentation.</p>
             </thead>
           </table>
         </article>
+        
       </section>
 
       <p class="definition"><span class="complaintRate bold">Définition : </span>Nombre de personnes ayant cliqué sur « ceci est un spam ».</p>
 
-      <div class="details complaintRate">
+      <div class="details complaintRate d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -664,9 +683,10 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles unsubscribeRate">Taux de désabonnements</h3>
 
-      <section class="blocksTables">
-        <section class="blocks unsubscribeRate color">
-          <article>
+      <section class="d-flex justify-content-between flex-wrap">
+
+        <section class="blocks unsubscribeRate color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
             <img class="littleIcons" src="./icons/picto_plaintes.png" alt="icone listes">
             <p class='bigNumbers'>0<span class="exponent">%</span></p>
           </article>
@@ -690,11 +710,12 @@ réactivité de la base et la qualité de la segmentation.</p>
             </thead>
           </table>
         </article>
+
       </section>
 
       <p class="definition"><span class="unsubscribeRate bold">Définition : </span>Indique la fidélité ou l’érosion de l’intérêt.</p>
 
-      <div class="details unsubscribeRate">
+      <div class="details unsubscribeRate d-flex justify-content-between align-items-center">
         <p>Détails</p>
         <img class="triangleBtn" src="icons/picto_triangle.png" alt="triangle">
       </div>
@@ -738,16 +759,22 @@ réactivité de la base et la qualité de la segmentation.</p>
 
       <h3 class="sectionsTitles co2">CO2</h3>
 
-      <section class="blocks co2 color">
-        <article>
-          <img class="littleIcons" src="./icons/picto_co2.png" alt="icone listes">
-          <p><span class='bigNumbers'>13,39</span><span class="bigLetters">kg</span></p>
-        </article>
+      <section class="d-flex justify-content-start">
+
+        <section class="blocks co2 color d-flex justify-content-end align-items-end">
+          <article class="d-flex flex-column align-items-end">
+            <img class="littleIcons" src="./icons/picto_co2.png" alt="icone listes">
+            <p><span class='bigNumbers'>13,39</span><span class="bigLetters">kg</span></p>
+          </article>
+        </section>
+
       </section>
       
       <p class="definition"><span class="co2 bold">Définition : </span>Indique la qualité de CO2 dépensé, il s’agit de l’empreinte carbone de la campagne.</p>
 
-      <a class="btnPdf" href="#" alt="bouton de tranformation en PDF">Télécharger les données en PDF</a>
+      <div class="btnPdf d-flex justify-content-center align-items-center">
+        <a href="#" alt="bouton de tranformation en PDF">Télécharger les données en PDF</a>
+      </div>
 
   </body>
 </html>
