@@ -2,7 +2,6 @@ body.stat {
     font-family: Verdana, 'Georgia', sans-serif;
     font-size: 13px;
     margin: 0px auto;
-    padding: 0px 20px;
     max-width: 840px;
 }
 
@@ -64,17 +63,9 @@ h2.newletter {
 }
 
 .dotted {
-    height: 11px;
-    line-height: 0px;
-    letter-spacing: -1px;
-    text-align: center;
-    margin: 15px 0px;
-    font-size: 20px;
-    font-family: "Geneva";
-    color: silver;
-    white-space: nowrap; /* indispensable pour utiliser la propriété text-overflow */
-    overflow: hidden; /* indispensable pour utiliser la propriété text-overflow */
-    text-overflow: "";
+    border-top: dotted 3px silver;
+    height: 3px;
+    margin: 25px 0px;
 }
 
 .leftColumnIcons {
@@ -146,7 +137,7 @@ p.dateSent {
     font-weight: bold;
 }
 
-.devicesBlocks section {
+.devicesBlocks .blocks {
     margin: 6px 0px;
 }
 
@@ -155,16 +146,19 @@ p.dateSent {
 }
 
 .blocks {
-    margin: 0px;
-    margin-right: 15px;
     border-radius: 10px;
     height: 100px;
-    min-width: 245px;
+    /*max-width: 250px;*/
+    max-width: 32%;
     color: white;
 }
 
 .blocks article {
     margin: 3px 18px;
+}
+
+.blocks.color {
+    padding: 0px;
 }
 
 .blocks.recipients.color {
@@ -217,13 +211,16 @@ p.dateSent {
 
 .right table {
     text-align: left;
-    width: 485px;
-    /*flex: auto 1 0; /* flex-grow, flex-shrink et flex-basis  */
+}
+
+.right {
+    padding-left: 20px;
+    padding-right: 0px;
+    margin: 0px;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
 }
 
 table.clickRate.align {
@@ -369,10 +366,6 @@ table.co2 tbody tr:nth-child(odd) {
     background-color: green;
 }
 
-.smartphone, .tablet, .desktop {
-    margin: 10px 0px;
-}
-
 .smartphone {
     background-color: #71becd;
 }
@@ -449,11 +442,15 @@ div.bouncesRate.spacing p {
     }
 
     .right {
-        width: 100%;
+        min-width: 100%;
+        padding: 0px;
     }
 
     .right table {
-        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        flex: none;
+        min-width: 100%;
     }
 
     .devicesBlocks {
@@ -462,11 +459,11 @@ div.bouncesRate.spacing p {
 
     .devicesBlocks .blocks {
         margin: 6px auto;
-        width: 100%;
+        min-width: 100%;
     }
 
     .blocks.color {
-        width: 100%;
+        min-width: 100%;
         margin: 0px;
     }
 
